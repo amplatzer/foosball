@@ -77,7 +77,7 @@ class Rankade(object):
 
         chrome_options = webdriver.ChromeOptions()
         #chrome_options.add_argument('--start-maximized')
-        chrome_options.add_argument('--proxy-server=http://xx.mioffice.cn:8888')
+        #chrome_options.add_argument('--proxy-server=http://xx.mioffice.cn:8888')
         self.driver = webdriver.Chrome(chrome_options = chrome_options)
         driver = self.driver
 
@@ -115,8 +115,17 @@ class Rankade(object):
         driver.find_element_by_name('newGameMatch').send_keys("Foosball")
         driver.find_element_by_name('newPlaceMatch').send_keys(self.playground)
         #driver.find_element_by_name('matchDate').clear()
-        driver.find_element_by_name('matchDate').send_keys(Keys.CONTROL + "a");
-        #driver.find_element_by_name('matchDate').click()
+        driver.find_element_by_name('matchDate').click()
+        driver.find_element_by_name('matchDate').send_keys(Keys.BACKSPACE)
+        driver.find_element_by_name('matchDate').send_keys(Keys.BACKSPACE)
+        driver.find_element_by_name('matchDate').send_keys(Keys.BACKSPACE)
+        driver.find_element_by_name('matchDate').send_keys(Keys.BACKSPACE)
+        driver.find_element_by_name('matchDate').send_keys(Keys.BACKSPACE)
+        driver.find_element_by_name('matchDate').send_keys(Keys.BACKSPACE)
+        driver.find_element_by_name('matchDate').send_keys(Keys.BACKSPACE)
+        driver.find_element_by_name('matchDate').send_keys(Keys.BACKSPACE)
+        driver.find_element_by_name('matchDate').send_keys(Keys.BACKSPACE)
+        driver.find_element_by_name('matchDate').send_keys(Keys.BACKSPACE)
         driver.find_element_by_name('matchDate').send_keys(date)
 
         driver.execute_script("matchForm.toggleAdditionalOptions();")
