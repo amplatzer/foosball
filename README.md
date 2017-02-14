@@ -5,7 +5,10 @@ some foosball scripts etc.
 北京这边一些朋友，小米俱乐部都是采用rankade记录日常的交流比赛成绩。
 
 https://rankade.com/bjfoosball/
+
 https://rankade.com/mifoosball/
+
+https://rankade.com/rc-foosball/
 
 大家经常使用kickertool记录每次比赛。这里的脚本用于把kickertool的结果json文件导入到rankade。
 
