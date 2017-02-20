@@ -82,7 +82,7 @@ kickername_rankadename_mapping = {
     u"Tony":u"*tony.lin",
     u"Yeoman":u"*yeoman.cai",
     u"Joey":u"会拉射的大菜鸡",
-    u"Vincent":u"铃盛纹身特"
+    u"Vincent":u"乌龙 Master 纹身特"
 }
 
 playground = "RingCentral Xiamen Fitness Room"
